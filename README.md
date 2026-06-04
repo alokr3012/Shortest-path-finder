@@ -14,6 +14,9 @@ Shortest Path Finder is a full-stack web application developed to help users ide
 * User-friendly web interface
 
 ## Tech Stack
+## Project Screenshot
+
+![Shortest Path Finder](frontend.png)
 
 ### Frontend
 
