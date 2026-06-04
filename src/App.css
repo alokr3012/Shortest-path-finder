@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+}
+
+.projectHeader {
+  font-family: 'Kanit', sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+
+.Maps {
+  width: 75%;
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.satMap {
+  width: 45%;
+  height: 100%;
+  background-image: url(./Maps/satMap.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+
+}
+
+.outMap {
+  width: 45%;
+  height: 100%;
+  background-image: url(./Maps/outlineMap.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  background-color: hwb(0 0% 100% / 0.887);
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 100px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  gap: 10px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.formButton {
+  height: 30px;
+  width: 60x;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sourceForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.destinationForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sourceInput {
+  width: 140px;
+   
+}
+
+.destinationInput {
+  width: 140px;
+  
+
+}
+
+.emptyBox {
+  color: rgb(208, 208, 208);
+}
+
+.projectDisplay {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+
+}
+
+label {
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
