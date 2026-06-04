@@ -1,51 +1,84 @@
+# Shortest Path Finder – IIT Guwahati Campus Navigation
 
-# Shortest Path Calculator
+## Overview
 
-A brief description of what this project does and who it's for
- 
+Shortest Path Finder is a full-stack web application developed to help users identify the optimal route between different locations on the IIT Guwahati campus. The system models campus locations as graph nodes and computes the shortest path and distance between a selected source and destination.
 
 ## Features
 
-- displays the shortest distance between source and destination.
-- displays shortest path one must take to reach destintion with minimum distance
-
-## API Reference
-
-#### Get shortest distance between node A and node B 
-
-```http
-  GET /shortd/<int:A>/<int:B>
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `source` | `integer` | **Required**|
-| `destination` | `integer` |     **Required**      |
-
-
-
+* Interactive IIT Guwahati campus map
+* Source and destination selection
+* Shortest path computation using graph-based algorithms
+* Route visualization
+* Distance estimation between locations
+* User-friendly web interface
 
 ## Tech Stack
 
-**Client:** React
+### Frontend
 
-**Server:** Flask, Python
+* React.js
+* JavaScript
+* HTML5
+* CSS3
 
+### Backend
 
-## Used By
+* Python
+* Flask
+* Flask-CORS
 
-This project is used by the following:
+## How It Works
 
-- Students of IIT Guwahati
+1. Select a source location.
+2. Select a destination location.
+3. Submit the request.
+4. The Flask backend computes the optimal route.
+5. The shortest path and total distance are displayed.
 
+## API Reference
 
-## FAQ
+### Get Shortest Path
 
-#### How will obtain my shortest path from source to destination?
+```http
+GET /shortd/<source>/<destination>
+```
 
-Every possible source and destination is mapped with a number ranging from (1 to 64). Path in the application will display the nodes in order to reach the destination. 
+| Parameter   | Type    | Description         |
+| ----------- | ------- | ------------------- |
+| source      | Integer | Source node ID      |
+| destination | Integer | Destination node ID |
 
+## Installation
 
+### Frontend
 
- 
+```bash
+npm install
+npm start
+```
 
+### Backend
+
+```bash
+pip install flask flask-cors
+python server.py
+```
+
+## Applications
+
+* Campus navigation
+* Route optimization
+* Graph algorithm visualization
+* Educational demonstration of shortest path algorithms
+
+## Future Enhancements
+
+* Real-time navigation
+* Mobile-responsive interface
+* Travel time estimation
+* Additional campus landmarks
+
+## Author
+
+Alok Raj
